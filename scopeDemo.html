@@ -1,0 +1,30 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            /*x=100;
+            display=function(){
+                x=200;
+                window.alert(window.x);
+                alert(x);
+            }
+            window.display();*/
+            (function(a,b){
+                alert(a+b);
+            })(10,"20");
+            var module=(function(a){
+                return{
+                    "radius":a,
+                    "getArea":function(){
+                        return this.radius*this.radius*3.14;
+                    }
+                }
+            })(10);
+            console.log(module)
+            alert(module.radius+"  "+module.getArea())
+            radius=500;
+        </script>
+    </body>
+</html>
